@@ -1,0 +1,4 @@
+generate_quote:
+  description: Generate a unique motivational quote about perseverance and positivity.
+  expected_output: A single motivational quote in plain text.
+  agent: motivator
