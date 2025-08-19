@@ -1,5 +1,5 @@
 [project]
-name = "motivation_quotes"
+name = "Daily Motivational Quote"
 version = "0.1.0"
 description = "An offline CrewAI project that generates motivational quotes."
 authors = [{ name = "Muhammad Thakeeb Muhammad" }]

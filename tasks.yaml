@@ -1,4 +1,14 @@
-generate_quote:
-  description: Generate a unique motivational quote about perseverance and positivity.
-  expected_output: A single motivational quote in plain text.
-  agent: motivator
+task_quote:
+  description: Generate a short motivational quote (1-2 sentences) and a one-line productivity tip. Return JSON like: {\"QUOTE\": \"...\",\n \"TIP\": \"...\"}
+  expected_output: JSON with 'QUOTE' and 'TIP'
+  agent: quote_agent
+
+task_format_tasks:
+  description: Format the user's provided in input 'task' (comma-separated string) into a markdown bullet list (maximum 6 items)
+  expected_output: Markdown bullet list
+  agent: task_agent
+
+task_combine:
+  description: Combine the outputs of the previous taks (quote_tip JSON and foratted task bullets) into a single friendly morning message ready to send.
+  expected_output: Friendly morning message
+  agent: coordinator_agent
